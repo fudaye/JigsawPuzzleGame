@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp"
+        >
+
+        <Chronometer
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format="00:00:00"
+            android:id="@+id/chronometer"
+            />
+
+        <TextView
+            android:id="@+id/tv_step"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_timer"
+            android:text="记步 ：1步"
+            />
+
+
+    </LinearLayout>
+
+
+    <me.bestfudaye.puzzle.widget.MyRecyclerView
+        android:id="@+id/rv"
+        android:layout_below="@+id/ll1"
+        android:layout_above="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </me.bestfudaye.puzzle.widget.MyRecyclerView>
+
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn_original"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/rv"
+            android:layout_height="wrap_content"
+            android:text="原图"
+            android:layout_alignParentBottom="true"
+            />
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/btn_original"
+            android:layout_below="@+id/rv"
+            android:layout_height="wrap_content"
+            android:text="重置"
+            />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/btn_reset"
+            android:layout_below="@+id/rv"
+            android:layout_height="wrap_content"
+            android:text="放弃"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
