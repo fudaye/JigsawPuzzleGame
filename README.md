@@ -1,6 +1,6 @@
 ## 拼图游戏
 
-![](http://ooa8w19mz.bkt.clouddn.com/pluzze-game.gif)
+![](https://github.com/fudaye/JigsawPuzzleGame/blob/master/screenshot/pluzze-game.gif?raw=true)
 
 ## 功能
 
